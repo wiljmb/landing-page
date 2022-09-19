@@ -156,3 +156,20 @@ img {
 .text-bright {
   color: #252440;
 }
+
+/* PRODUCT FEATURES SECTION */
+.product-features-section {
+  padding: 4rem 0;
+}
+
+.product-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 4.8rem;
+}
+
+.product-features__description {
+  font-size: 1.6rem;
+  margin-top: 2.8rem;
+}
