@@ -4,7 +4,455 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
     <title>Landing Page</title>
   </head>
-  <body></body>
+  <body>
+    <header class="flex-container justify-around center-v header">
+      <div class="header__logo-box">
+        <a href="#">
+          <img class="logo" src="img/logo2.png" alt="logo" />
+        </a>
+      </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#features" class="navigation__link">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#testimonial" class="navigation__link">Testimonial</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#pricing" class="navigation__link">Pricing</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#trial" class="navigation__link btn btn--cta">Try demo</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav icon-mobile-open" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav icon-mobile-close" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container grid grid--2-cols center-v">
+          <div class="hero__text-box center-text">
+            <h1 class="heading-primary">
+              <span class="heading-primary--sub"
+                >Best software for your office</span
+              >
+              <span class="heading-primary--main">Try cooper today!</span>
+            </h1>
+            <p class="hero__paragraph">
+              Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+          <div class="hero__img-box">
+            <img src="img/img02.png" alt="image description" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section container" id="features">
+        <h2 class="heading-secondary center-text">
+          Best software to manage<br />office
+          <span class="text-bright">work and workers!</span>
+        </h2>
+
+        <div class="features">
+          <div class="feature">
+            <ion-icon class="feature__icon" name="id-card-outline"></ion-icon>
+            <h4 class="heading-4">Special Login System</h4>
+            <p class="feature__text">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature__icon" name="time-outline"></ion-icon>
+            <h4 class="heading-4">Time Tracking</h4>
+            <p class="feature__text">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature__icon" name="documents-outline"></ion-icon>
+            <h4 class="heading-4">Make notes easily</h4>
+            <p class="feature__text">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon
+              class="feature__icon"
+              name="calculator-outline"
+            ></ion-icon>
+            <h4 class="heading-4">Calculate daily cost</h4>
+            <p class="feature__text">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature__icon" name="trash-bin-outline"></ion-icon>
+            <h4 class="heading-4">One click cleaning</h4>
+            <p class="feature__text">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon
+              class="feature__icon"
+              name="calendar-number-outline"
+            ></ion-icon>
+            <h4 class="heading-4">Daily report</h4>
+            <p class="feature__text">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-features-section" id="about">
+        <div class="container grid grid--2-cols center-v">
+          <div class="product-features__text-box">
+            <h2 class="heading-secondary">
+              No more confusion and complex to manage your office.
+            </h2>
+            <p class="product-features__description">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse molestie consequat, vel illum dolore eu feugiat nulla
+              facilisis at vero eros et accumsan et iusto odio dignissim qui
+              blandit praesent luptatum zzril delenit augue duis dolore te
+              feugait nulla facilisi.
+            </p>
+          </div>
+          <div class="product-features__image-box">
+            <img
+              src="img/img03.png"
+              alt="product features images"
+              class="product-features__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <aside class="demo-section">
+        <div class="flex-container center-v container">
+          <div class="demo__text-box">
+            <h2 class="heading-secondary">
+              Need a perfect software to manage everything?
+            </h2>
+            <p class="demo__description">
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim placerat facer possim assum. Typi
+              non habent claritatem insitam.
+            </p>
+          </div>
+          <div class="flex-container center-v demo__cta-box">
+            <a class="btn btn--outline" href="#">Purchase now</a>
+            <a class="btn--text" href="#">Try our Demo</a>
+          </div>
+        </div>
+      </aside>
+
+      <section class="grid grid--2-cols center-v testimonials-section" id="testimonial">
+        <div class="testimonials-container">
+          <h2 class="heading-secondary">
+            More than
+            <span class="text-bright">20,000+ Customers</span>,<br />see some
+            wishes here
+          </h2>
+
+          <div class="grid grid--2-cols testimonials">
+            <figure class="testimonial">
+              <img
+                src="img/dave.jpg"
+                alt="Photo of customer Dave Bryson"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial-text">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+              </blockquote>
+              <p class="testimonial-name">— Dave Bryson</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/ben.jpg"
+                alt="Photo of customer Ben Hadley"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial-text">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+              </blockquote>
+              <p class="testimonial-name">— Ben Hadley</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/steve.jpg"
+                alt="Photo of customer Steve Miller"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial-text">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+              </blockquote>
+              <p class="testimonial-name">— Steve Miller</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="img/hannah.jpg"
+                alt="Photo of customer Hannah Smith"
+                class="testimonial__img"
+              />
+              <blockquote class="testimonial-text">
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+              </blockquote>
+              <p class="testimonial-name">— Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+        <div class="purchase-now">
+          <img
+            class="margin-bottom-md"
+            src="img/img04.png"
+            alt="image description"
+          />
+          <div class="purchase-now__text-box center-text">
+            <h2 class="heading-secondary">
+              Our software is totally customisable and easy to use,
+              <span class="text-bright">no need to know anything!</span>
+            </h2>
+            <a href="#" class="btn btn--info">Purchase now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <div class="container center-text">
+          <h2 class="heading-secondary">
+            Select your <span class="text-bright">plan as your choise</span>, no
+            need to pay extra money.
+          </h2>
+        </div>
+        <div class="flex-container center-v pricing-plans">
+          <div class="pricing-plan flex-col pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Free!</p>
+              <p class="plan-price"><span>$0</span>/mo</p>
+              <p class="plan-duration">30 Days Trial</p>
+            </header>
+            <ul class="list flex-col">
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>1 User</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Admin Dashboard</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Live Chat Service</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Special Offers</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Free Support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--info">Get Started now</a>
+          </div>
+          <div class="pricing-plan flex-col pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Freelancer</p>
+              <p class="plan-price"><span>$3.99</span>/mo</p>
+              <p class="plan-duration">Best for Freelance Team</p>
+            </header>
+            <ul class="list flex-col">
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>1 User</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Admin Dashboard</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Live Chat Service</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Special Offers</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Free Support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--info">Get Started now</a>
+          </div>
+          <div class="pricing-plan flex-col pricing-plan--active">
+            <header class="plan-header">
+              <p class="plan-name">Startup</p>
+              <p class="plan-price"><span>$10</span>/mo</p>
+              <p class="plan-duration">Best for small startups</p>
+            </header>
+            <ul class="list flex-col">
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>20 User</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Admin Dashboard</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Live Chat Service</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Special Offers</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Free Support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--info">Get Started now</a>
+          </div>
+          <div class="pricing-plan flex-col pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Company</p>
+              <p class="plan-price"><span>$15.99</span>/mo</p>
+              <p class="plan-duration">Best for Big Team</p>
+            </header>
+            <ul class="list flex-col">
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>1 User</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Admin Dashboard</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Live Chat Service</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Special Offers</span>
+              </li>
+              <li class="list-item center-v">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Free Support</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--info">Get Started now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-trial center-v container" id="trial">
+        <div class="trial__image-box">
+          <img
+            src="img/img06.jpg"
+            alt="product features images"
+            class="trial__image"
+          />
+        </div>
+        <div class="trial__text-box">
+          <h2 class="heading-secondary">
+            Try our free trial today. If you don’t like, you can cancel it
+            anytime!
+          </h2>
+          <p class="trial__description margin-bottom-md">
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+            vero eros et accumsan et iusto odio dignissim qui blandit praesent
+            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          </p>
+          <a href="#" class="btn btn--info">Try our demo</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container flex-container center-v flex-col">
+        <a class="footer-logo" href="#"
+          ><img class="logo" src="img/logo2.png" alt="logo" />
+        </a>
+        <p>
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore
+        </p>
+        <ul class="social-links">
+          <li>
+            <a href="#" class="footer__link"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"
+              ><ion-icon class="social-icon" name="logo-google"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer__link"
+              ><ion-icon class="social-icon" name="logo-pinterest"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <p class="copyright">
+          Copyright &copy; <span class="year">2022</span>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
