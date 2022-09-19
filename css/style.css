@@ -47,7 +47,12 @@ img {
 
 .heading-secondary {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.heading-4 {
+  font-weight: 400;
+  font-size: 1.9rem;
 }
 
 .paragraph {
@@ -101,7 +106,7 @@ img {
   color: #7c7c8c;
 }
 
-/* Section Hero */
+/* HERO SECTION */
 .section-hero {
   background-color: #252440;
   padding: 15rem 0;
@@ -116,4 +121,38 @@ img {
 
 .hero__text-box {
   color: #fff;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  padding: 10rem 0;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6rem;
+  align-items: start;
+  margin-top: 10rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+}
+
+.feature__icon {
+  grid-row: 1 / span 2;
+  height: 4.4rem;
+  width: 4.4rem;
+  color: #252440;
+}
+
+.feature__text {
+  font-size: 1.7rem;
+}
+
+.text-bright {
+  color: #252440;
 }
