@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +23,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="js/script.js"></script>
 
     <title>Landing Page</title>
   </head>
@@ -38,22 +40,26 @@
             <a href="#" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Features</a>
+            <a href="#features" class="navigation__link">Features</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About</a>
+            <a href="#about" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Testimonial</a>
+            <a href="#testimonial" class="navigation__link">Testimonial</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Pricing</a>
+            <a href="#pricing" class="navigation__link">Pricing</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link btn btn--cta">Try demo</a>
+            <a href="#trial" class="navigation__link btn btn--cta">Try demo</a>
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav icon-mobile-open" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav icon-mobile-close" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -76,7 +82,7 @@
         </div>
       </section>
 
-      <section class="features-section container">
+      <section class="features-section container" id="features">
         <h2 class="heading-secondary center-text">
           Best software to manage<br />office
           <span class="text-bright">work and workers!</span>
@@ -140,7 +146,7 @@
         </div>
       </section>
 
-      <section class="product-features-section">
+      <section class="product-features-section" id="about">
         <div class="container grid grid--2-cols center-v">
           <div class="product-features__text-box">
             <h2 class="heading-secondary">
@@ -183,7 +189,7 @@
         </div>
       </aside>
 
-      <section class="grid grid--2-cols center-v testimonials-section">
+      <section class="grid grid--2-cols center-v testimonials-section" id="testimonial">
         <div class="testimonials-container">
           <h2 class="heading-secondary">
             More than
@@ -258,7 +264,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container center-text">
           <h2 class="heading-secondary">
             Select your <span class="text-bright">plan as your choise</span>, no
@@ -389,7 +395,7 @@
         </div>
       </section>
 
-      <section class="section-trial center-v container">
+      <section class="section-trial center-v container" id="trial">
         <div class="trial__image-box">
           <img
             src="img/img06.jpg"
