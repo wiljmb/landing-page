@@ -1,90 +1,4 @@
 /* .btn--outline:link,
-
-/* GLOBAL */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  box-sizing: border-box;
-
-  font-family: 'Open Sans', sans-serif;
-
-  font-weight: 400;
-  line-height: 1.6;
-  color: #666;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.heading-primary--main {
-  display: block;
-  font-size: 5.2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 300;
-  text-transform: lowercase;
-}
-
-.heading-secondary {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-.heading-4 {
-  font-weight: 400;
-  font-size: 1.9rem;
-}
-
-.paragraph {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 0.8rem 1.6rem;
-  cursor: pointer;
-  font-family: inherit;
-
-  transition: all 0.3s;
-}
-
-.btn--outline:link,
 .btn--outline:visited {
   color: #fff;
   border: 2px solid #fff;
@@ -349,14 +263,6 @@ img {
   border-top: 1px solid #eee;
   background-color: #333399;
   color: #fff;
-  background-color: #000080;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-logo {
@@ -365,11 +271,6 @@ img {
 
 
 .footer-logo + p {
-.logo {
-  height: 4rem;
-}
-
-.footer-container > .footer-logo + p {
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
   text-align: center;
@@ -403,4 +304,3 @@ img {
 .copyright {
   font-size: 1.4rem;
 }
-
