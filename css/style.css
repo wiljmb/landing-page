@@ -1,3 +1,4 @@
+/* GLOBAL */
 *,
 *::after,
 *::before {
@@ -13,7 +14,54 @@ html {
 body {
   box-sizing: border-box;
 
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.6;
+  color: #666;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #252440;
+
+  height: 9.6rem;
+  position: relative;
+}
+
+.header__logo-box {
+  max-width: 10rem;
+}
+
+/* NAVIGATION */
+.navigation__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.navigation__link:active,
+.navigation__link:hover {
+  color: #7c7c8c;
 }
