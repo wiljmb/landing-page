@@ -10,7 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script
       type="module"
@@ -24,9 +26,11 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header class="header">
+    <header class="flex-container justify-around center-v header">
       <div class="header__logo-box">
-        <img src="img/logo2.png" alt="logo" />
+        <a href="#">
+          <img class="logo" src="img/logo2.png" alt="logo" />
+        </a>
       </div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
@@ -46,14 +50,14 @@
             <a href="#" class="navigation__link">Pricing</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link cta-btn">Try demo</a>
+            <a href="#" class="navigation__link btn btn--cta">Try demo</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-hero">
-        <div class="hero container">
+        <div class="container grid grid--2-cols center-v">
           <div class="hero__text-box center-text">
             <h1 class="heading-primary">
               <span class="heading-primary--sub"
@@ -61,7 +65,7 @@
               >
               <span class="heading-primary--main">Try cooper today!</span>
             </h1>
-            <p class="paragraph">
+            <p class="hero__paragraph">
               Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh
               euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             </p>
@@ -137,7 +141,7 @@
       </section>
 
       <section class="product-features-section">
-        <div class="product-features container">
+        <div class="container grid grid--2-cols center-v">
           <div class="product-features__text-box">
             <h2 class="heading-secondary">
               No more confusion and complex to manage your office.
@@ -161,7 +165,7 @@
       </section>
 
       <aside class="demo-section">
-        <div class="demo container">
+        <div class="flex-container center-v container">
           <div class="demo__text-box">
             <h2 class="heading-secondary">
               Need a perfect software to manage everything?
@@ -172,14 +176,14 @@
               non habent claritatem insitam.
             </p>
           </div>
-          <div class="demo__cta-box">
+          <div class="flex-container center-v demo__cta-box">
             <a class="btn btn--outline" href="#">Purchase now</a>
             <a class="btn--text" href="#">Try our Demo</a>
           </div>
         </div>
       </aside>
 
-      <section class="testimonials-section">
+      <section class="grid grid--2-cols center-v testimonials-section">
         <div class="testimonials-container">
           <h2 class="heading-secondary">
             More than
@@ -187,7 +191,7 @@
             wishes here
           </h2>
 
-          <div class="testimonials">
+          <div class="grid grid--2-cols testimonials">
             <figure class="testimonial">
               <img
                 src="img/dave.jpg"
@@ -239,13 +243,17 @@
           </div>
         </div>
         <div class="purchase-now">
-          <img src="img/img04.png" alt="image description" />
+          <img
+            class="margin-bottom-md"
+            src="img/img04.png"
+            alt="image description"
+          />
           <div class="purchase-now__text-box center-text">
             <h2 class="heading-secondary">
               Our software is totally customisable and easy to use,
               <span class="text-bright">no need to know anything!</span>
             </h2>
-            <a href="#" class="btn--info">Purchase now</a>
+            <a href="#" class="btn btn--info">Purchase now</a>
           </div>
         </div>
       </section>
@@ -257,131 +265,131 @@
             need to pay extra money.
           </h2>
         </div>
-        <div class="pricing-plans">
-          <div class="pricing-plan pricing-plan--starter">
+        <div class="flex-container center-v pricing-plans">
+          <div class="pricing-plan flex-col pricing-plan--starter">
             <header class="plan-header">
               <p class="plan-name">Free!</p>
               <p class="plan-price"><span>$0</span>/mo</p>
               <p class="plan-duration">30 Days Trial</p>
             </header>
-            <ul class="list">
-              <li class="list-item">
+            <ul class="list flex-col">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>1 User</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Admin Dashboard</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="close-outline"></ion-icon>
                 <span>Live Chat Service</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="close-outline"></ion-icon>
                 <span>Special Offers</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Free Support</span>
               </li>
             </ul>
-            <a href="#" class="btn--info">Get Started now</a>
+            <a href="#" class="btn btn--info">Get Started now</a>
           </div>
-          <div class="pricing-plan pricing-plan--starter">
+          <div class="pricing-plan flex-col pricing-plan--starter">
             <header class="plan-header">
               <p class="plan-name">Freelancer</p>
               <p class="plan-price"><span>$3.99</span>/mo</p>
               <p class="plan-duration">Best for Freelance Team</p>
             </header>
-            <ul class="list">
-              <li class="list-item">
+            <ul class="list flex-col">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>1 User</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Admin Dashboard</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Live Chat Service</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="close-outline"></ion-icon>
                 <span>Special Offers</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Free Support</span>
               </li>
             </ul>
-            <a href="#" class="btn--info">Get Started now</a>
+            <a href="#" class="btn btn--info">Get Started now</a>
           </div>
-          <div class="pricing-plan pricing-plan--active">
+          <div class="pricing-plan flex-col pricing-plan--active">
             <header class="plan-header">
               <p class="plan-name">Startup</p>
               <p class="plan-price"><span>$10</span>/mo</p>
               <p class="plan-duration">Best for small startups</p>
             </header>
-            <ul class="list">
-              <li class="list-item">
+            <ul class="list flex-col">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>20 User</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Admin Dashboard</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Live Chat Service</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Special Offers</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Free Support</span>
               </li>
             </ul>
-            <a href="#" class="btn--info">Get Started now</a>
+            <a href="#" class="btn btn--info">Get Started now</a>
           </div>
-          <div class="pricing-plan pricing-plan--starter">
+          <div class="pricing-plan flex-col pricing-plan--starter">
             <header class="plan-header">
               <p class="plan-name">Company</p>
               <p class="plan-price"><span>$15.99</span>/mo</p>
               <p class="plan-duration">Best for Big Team</p>
             </header>
-            <ul class="list">
-              <li class="list-item">
+            <ul class="list flex-col">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>1 User</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Admin Dashboard</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="close-outline"></ion-icon>
                 <span>Live Chat Service</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="close-outline"></ion-icon>
                 <span>Special Offers</span>
               </li>
-              <li class="list-item">
+              <li class="list-item center-v">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
                 <span>Free Support</span>
               </li>
             </ul>
-            <a href="#" class="btn--info">Get Started now</a>
+            <a href="#" class="btn btn--info">Get Started now</a>
           </div>
         </div>
       </section>
 
-      <section class="section-trial container">
+      <section class="section-trial center-v container">
         <div class="trial__image-box">
           <img
             src="img/img06.jpg"
@@ -394,17 +402,19 @@
             Try our free trial today. If you don’t like, you can cancel it
             anytime!
           </h2>
-          <p class="trial__description">
+          <p class="trial__description margin-bottom-md">
             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
             molestie consequat, vel illum dolore eu feugiat nulla facilisis at
             vero eros et accumsan et iusto odio dignissim qui blandit praesent
             luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
           </p>
-          <a href="#" class="btn--info">Try our demo</a>
+          <a href="#" class="btn btn--info">Try our demo</a>
         </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container flex-container center-v flex-col">
+
       <div class="container footer-container">
         <a class="footer-logo" href="#"
           ><img class="logo" src="img/logo2.png" alt="logo" />
